@@ -1,0 +1,28 @@
+{
+  "name": "2021-fso-part13-sql-blogs",
+  "version": "1.0.0",
+  "description": "Blog Application from Part 13 of Full Stack open course",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/des-ant/2021-FSO-Part13-SQL-Blogs.git"
+  },
+  "author": "des-ant",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/des-ant/2021-FSO-Part13-SQL-Blogs/issues"
+  },
+  "homepage": "https://github.com/des-ant/2021-FSO-Part13-SQL-Blogs#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "pg": "^8.7.3",
+    "sequelize": "^6.17.0"
+  }
+}
