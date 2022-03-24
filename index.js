@@ -1,10 +1,12 @@
 const express = require('express')
 const app = express()
+require('express-async-errors')
 
 const { PORT } = require('./util/config')
 const { connectToDatabase } = require('./util/db')
 
 const blogsRouter = require('./controllers/blogs')
+const middleware = require('./util/middleware')
 
 app.use(express.json())
 
@@ -16,5 +18,7 @@ const start = async () => {
     console.log(`Server running on port ${PORT}`)
   })
 }
+
+app.use(middleware.errorHandler);
 
 start()
