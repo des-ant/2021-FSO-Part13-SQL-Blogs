@@ -19,6 +19,6 @@ const start = async () => {
   })
 }
 
-app.use(middleware.errorHandler);
-
 start()
+
+app.use(middleware.errorHandler);
