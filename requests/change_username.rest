@@ -1,0 +1,14 @@
+PUT http://localhost:3001/api/users/bob@bob.com
+Content-Type: application/json
+
+{
+  "username": "bob123@bob.com"
+}
+
+###
+PUT http://localhost:3001/api/users/bob123@bob.com
+Content-Type: application/json
+
+{
+  "username": "bob@bob.com"
+}

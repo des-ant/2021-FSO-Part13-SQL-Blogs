@@ -4,7 +4,7 @@
   "description": "Blog Application from Part 13 of Full Stack open course",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "express-async-errors": "^3.1.1",
     "jsonwebtoken": "^8.5.1",
     "pg": "^8.7.3",
-    "sequelize": "^6.17.0"
+    "sequelize": "^6.17.0",
+    "umzug": "^3.1.1"
   }
 }
