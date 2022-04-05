@@ -4,7 +4,8 @@
   "description": "Blog Application from Part 13 of Full Stack open course",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon index.js"
+    "dev": "nodemon index.js",
+    "migration:down": "node util/rollback.js"
   },
   "repository": {
     "type": "git",
