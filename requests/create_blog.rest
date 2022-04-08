@@ -9,12 +9,16 @@ Content-Type: application/json
 ###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTA3NDgyNn0.cVpkGk6rMnsWysO1GmyBXAobCGNyUm0Bq39f2IsUUrA
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTQyNTQxOX0.W6fbs-_lFC5Ddhmp4mVY8uK_wahncnKRsNa1UJdW7DQ
 
 {
     "author": "John aaba",
     "url": "john.com",
-    "title": "Johns part 2",
+    "title": "Johns part 4",
     "likes": 5,
     "year": 2022
 }
+
+###
+GET  http://localhost:3001/api/blogs
+Content-Type: application/json

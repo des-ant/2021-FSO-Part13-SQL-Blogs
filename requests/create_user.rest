@@ -5,3 +5,7 @@ Content-Type: application/json
   "name": "Bob James",
   "username": "bob@bob.com"
 }
+
+###
+GET http://localhost:3001/api/users
+Content-Type: application/json
