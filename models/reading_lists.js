@@ -10,7 +10,7 @@ ReadingLists.init({
     primaryKey: true,
     autoIncrement: true
   },
-  isRead: {
+  read: {
     type: DataTypes.BOOLEAN,
     defaultValue: false,
     allowNull: false,

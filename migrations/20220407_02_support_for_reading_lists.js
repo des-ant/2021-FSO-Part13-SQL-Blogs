@@ -8,7 +8,7 @@ module.exports = {
         primaryKey: true,
         autoIncrement: true
       },
-      is_read: {
+      read: {
         type: DataTypes.BOOLEAN,
         defaultValue: false,
         allowNull: false,

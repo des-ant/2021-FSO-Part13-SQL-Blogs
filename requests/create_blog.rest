@@ -9,12 +9,12 @@ Content-Type: application/json
 ###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTQ2NTI4NX0.oZlrNL5yTY17Yma37R27Tjg3boTv9h4M3CYfcH5LldI
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTUwNjcwMX0.xLVgExFTiTnyUmcdAInKDlIvs2rqtWmVq0BeLcD5ZP4
 
 {
     "author": "Bob aaba",
     "url": "bob.com",
-    "title": "Bob part 2",
+    "title": "Bob part 1",
     "likes": 3,
     "year": 2022
 }
@@ -31,7 +31,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjIsImlhdCI6MTY0OTQ2NTMxOX0.Teuu0qwGGTZKpk7D3hSX9klYhJ-jEkS5rPfxWpOr33U
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjIsImlhdCI6MTY0OTUwNjczM30.RV8UuXH4fmul9GwhfnKTBl0wxX6pexPUiH8GSScdVOI
 
 {
     "author": "John aaba",
