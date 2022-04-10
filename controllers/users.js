@@ -35,7 +35,7 @@ router.put('/:username', async (req, res) => {
 
 router.get('/:id', async (req, res) => {
   const queryRead = req.query.read
-  let user;
+  let user = undefined
 
   if (queryRead !== undefined) {
     user = await User.findByPk(req.params.id, {
