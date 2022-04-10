@@ -9,7 +9,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTUwNjcwMX0.xLVgExFTiTnyUmcdAInKDlIvs2rqtWmVq0BeLcD5ZP4
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTU1NTIxMH0.wGEloPcpXUGQHGABr2DgviaNDMHtzOTPJbGi13MIHvI
 
 {
     "author": "Bob aaba",
@@ -31,7 +31,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjIsImlhdCI6MTY0OTUwNjczM30.RV8UuXH4fmul9GwhfnKTBl0wxX6pexPUiH8GSScdVOI
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImpvaG5Ac21pdGguY29tIiwiaWQiOjIsImlhdCI6MTY0OTU1NTE1M30.rncGOy6vGT-EzAxRhZc4m_OS9Wx-4b7l9TG8oe13hkI
 
 {
     "author": "John aaba",
