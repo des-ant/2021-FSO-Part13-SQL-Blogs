@@ -1,2 +1,13 @@
+# Returns the entire reading list
 GET http://localhost:3001/api/users/1
+Content-Type: application/json
+
+###
+# Returns blogs that have been read
+GET http://localhost:3001/api/users/1?read=true
+Content-Type: application/json
+
+###
+# Returns blogs that have not been read
+GET http://localhost:3001/api/users/1?read=false
 Content-Type: application/json
