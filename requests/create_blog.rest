@@ -9,7 +9,7 @@ Content-Type: application/json
 ###
 POST http://localhost:3001/api/blogs
 Content-Type: application/json
-Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTU1NTIxMH0.wGEloPcpXUGQHGABr2DgviaNDMHtzOTPJbGi13MIHvI
+Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImJvYkBib2IuY29tIiwiaWQiOjEsImlhdCI6MTY0OTY3OTYxMywiZXhwIjoxNjQ5NjgzMjEzfQ.njgDcRRkTS-pYlkDKEymRkKt94xnwj-2OdICr4GsvPM
 
 {
     "author": "Bob aaba",
