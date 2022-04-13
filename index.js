@@ -1,8 +1,9 @@
 const express = require('express')
 const app = express()
 require('express-async-errors')
+const session = require('express-session')
 
-const { PORT } = require('./util/config')
+const { PORT, SESSION_SECRET } = require('./util/config')
 const { connectToDatabase } = require('./util/db')
 const middleware = require('./util/middleware')
 
@@ -13,6 +14,8 @@ const authorsRouter = require('./controllers/authors')
 const readingListsRouter = require('./controllers/readingLists')
 
 app.use(express.json())
+
+app.use(session({ secret: SESSION_SECRET }))
 
 app.use('/api/blogs', blogsRouter)
 app.use('/api/users', usersRouter)
