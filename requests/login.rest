@@ -14,3 +14,6 @@ Content-Type: application/json
   "username": "john@smith.com",
   "password": "secret"
 }
+
+###
+DELETE  http://localhost:3001/api/logout

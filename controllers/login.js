@@ -45,7 +45,7 @@ router.post('/', async (req, res) => {
     token
   })
 
-  console.log(newSession.getDataValue())
+  console.log(newSession.dataValues)
 
   res
     .status(200)

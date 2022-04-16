@@ -52,7 +52,7 @@ Content-Type: application/json
 {
     "author": "John aaba",
     "url": "john.com",
-    "title": "Johns part session",
-    "likes": 9,
+    "title": "Johns part session 2",
+    "likes": 5,
     "year": 2022
 }
