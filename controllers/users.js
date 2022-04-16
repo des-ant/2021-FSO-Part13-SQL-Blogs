@@ -10,6 +10,8 @@ router.get('/', async (req, res) => {
     }
   })
   res.json(users)
+
+  console.log(req.sessionID)
 })
 
 router.post('/', async (req, res) => {
