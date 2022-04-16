@@ -44,3 +44,15 @@ Authorization: bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Impva
 ###
 GET  http://localhost:3001/api/blogs
 Content-Type: application/json
+
+###
+POST http://localhost:3001/api/blogs
+Content-Type: application/json
+
+{
+    "author": "John aaba",
+    "url": "john.com",
+    "title": "Johns part session",
+    "likes": 9,
+    "year": 2022
+}

@@ -3,9 +3,10 @@ const router = require('express').Router()
 
 const { SECRET } = require('../util/config')
 const User = require('../models/user')
+const Session = require('../models/session')
 
-router.post('/', async (request, response) => {
-  const body = request.body
+router.post('/', async (req, res) => {
+  const body = req.body
 
   const user = await User.findOne({
     where: {
@@ -16,7 +17,7 @@ router.post('/', async (request, response) => {
   const passwordCorrect = body.password === 'secret'
 
   if (!(user && passwordCorrect)) {
-    return response.status(401).json({
+    return res.status(401).json({
       error: 'invalid username or password'
     })
   }
@@ -33,9 +34,22 @@ router.post('/', async (request, response) => {
     { expiresIn: 60*60 }
   )
 
-  response
+  // Check if session already exists before adding token
+  const existingSession = await Session.findByPk(req.sessionID)
+  if (existingSession !== null) {
+    return res.status(401).json({ error: 'already logged in' })
+  }
+
+  const newSession = await Session.create({
+    sid: req.sessionID,
+    token
+  })
+
+  console.log(newSession.getDataValue())
+
+  res
     .status(200)
-    .send({ token, username: user.username, name: user.name })
+    .send({ username: user.username, name: user.name })
 })
 
 module.exports = router
